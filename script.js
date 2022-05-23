@@ -1,17 +1,13 @@
 function slider() {
     var slider = document.getElementById("slider").value;
-    if (slider) {
-        document.getElementById("range").value = slider;
-    }
+    document.getElementById("range").value = slider;
 
 
 }
 
 function range() {
     var range = document.getElementById("range").value;
-    if (range) {
-        document.getElementById("slider").value = range;
-    }
+    document.getElementById("slider").value = range;
 }
 
 function calculation() {
@@ -36,7 +32,7 @@ function calculation() {
         alert("Please select a specific year for calculating Simple Interest");
     } else {
         res = (principle * rate * time) / 100;
-        document.getElementById("result").innerHTML = "If you Deposit &nbsp" + principle + "<br> at an Interest rate of &nbsp" + rate + "<br> You will receive an amount of &nbsp" + res + "<br> In the Year &nbsp" + myear;
+        document.getElementById("result").innerHTML = "If you Deposit &nbsp" + '<span style="background-color:yellow">' + principle + '</span>' + "<br> at an Interest rate of &nbsp" + '<span style="background-color:yellow">' + rate + "</span>" + "<br> You will receive an amount of &nbsp" + '<span style="background-color:yellow">' + res + "</span>" + "<br> In the Year &nbsp" + '<span style="background-color:yellow">' + myear + "</span>";
     }
 
 

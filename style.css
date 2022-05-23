@@ -4,26 +4,25 @@
 }
 
 body {
-    background: #FEAC5E;
-    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
-    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
+.maindiv {
     height: 400px;
-    width: 35%;
     margin: 50px auto 150px auto;
+    width: 35%;
     display: flex;
+    border-radius: 25px;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 25px;
     background-color: white;
-    z-index: -1;
 }
 
 .textbox {
     padding: auto 30px;
-    margin-left: 4rem;
+    margin-left: 4.2rem;
 }
 
 #time {
@@ -45,12 +44,13 @@ p {
 }
 
 .btn:hover {
-    background-color: blue;
-    color: white;
+    background: #FEAC5E;
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
 }
 
 .slider {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
     width: 10.5rem;
 }
 
