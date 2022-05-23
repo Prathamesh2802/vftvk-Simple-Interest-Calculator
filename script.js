@@ -28,10 +28,12 @@ function calculation() {
     console.log(myear);
     if (principle == "") {
         alert("Please enter the Interest Amount");
+    } else if (principle == "0" || principle <= "0") {
+        alert("Please enter the Positive Number");
     } else if (rate == "") {
         alert("Please provide the interest rate");
     } else if (time == "") {
-        alert("Please select a specific Time Period for calculating S.I.");
+        alert("Please select a specific year for calculating Simple Interest");
     } else {
         res = (principle * rate * time) / 100;
         document.getElementById("result").innerHTML = "If you Deposit &nbsp" + principle + "<br> at an Interest rate of &nbsp" + rate + "<br> You will receive an amount of &nbsp" + res + "<br> In the Year &nbsp" + myear;
