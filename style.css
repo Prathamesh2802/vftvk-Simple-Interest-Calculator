@@ -1,4 +1,73 @@
-body {background-color:tan;}
-h1{color:green;}
+* {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    background: #FEAC5E;
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+}
 
+.container {
+    height: 400px;
+    width: 35%;
+    margin: 50px auto 150px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+    background-color: white;
+    z-index: -1;
+}
+
+.textbox {
+    padding: auto 30px;
+    margin-left: 4rem;
+}
+
+#time {
+    margin-left: 2rem;
+}
+
+label,
+p {
+    margin-left: 6rem;
+}
+
+.btn {
+    height: 2rem;
+    border-radius: 5px;
+    width: 7rem;
+    border: hidden;
+    cursor: pointer;
+    align-self: center;
+}
+
+.btn:hover {
+    background-color: blue;
+    color: white;
+}
+
+.slider {
+    margin-left: 2rem;
+    width: 10.5rem;
+}
+
+#range::-webkit-outer-spin-button,
+#range::-webkit-inner-spin-button,
+.textbox::-webkit-outer-spin-button,
+.textbox::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#range {
+    margin-left: 2rem;
+    width: 2rem;
+    border: none;
+}
+
+#years::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
