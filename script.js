@@ -30,12 +30,12 @@ function calculation() {
     myear += time1;
     console.log(myear);
     if (principle == "") {
-        alert("Please enter the Interest Amount");
+        alert("Please enter the Principal Amount");
     } else if (principle == "0" || principle <= "0") {
         alert("Please enter the Positive Number");
 
     } else if (rate == "") {
-        alert("Please provide the interest rate");
+        alert("Please provide the Interest rate");
     } else if (time == "") {
         alert("Please select a specific year for calculating Simple Interest");
     } else {
