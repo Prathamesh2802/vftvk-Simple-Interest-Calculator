@@ -24,10 +24,12 @@ body {
     width: 9.5rem;
     margin-left: 4.2rem;
     max-width: 100%;
+    border-radius: 5px;
 }
 
 #time {
     margin-left: 2rem;
+    border-radius: 5px;
 }
 
 label,
