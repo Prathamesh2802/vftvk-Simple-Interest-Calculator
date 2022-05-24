@@ -1,3 +1,7 @@
+window.onload = function() {
+    document.getElementById("principal").focus();
+}
+
 function slider() {
     var slider = document.getElementById("slider").value;
     document.getElementById("range").value = slider;
@@ -10,12 +14,15 @@ function range() {
     document.getElementById("slider").value = range;
 }
 
+
 function calculation() {
 
     var principle = document.getElementById("principal").value;
     var rate = document.getElementById("range").value;
     var time = document.getElementById("time").value;
     var time1 = parseInt(time);
+    document.getElementById("principal").focus();
+
     var res;
     var t = new Date();
     let year = t.getFullYear();
@@ -26,6 +33,7 @@ function calculation() {
         alert("Please enter the Interest Amount");
     } else if (principle == "0" || principle <= "0") {
         alert("Please enter the Positive Number");
+
     } else if (rate == "") {
         alert("Please provide the interest rate");
     } else if (time == "") {
