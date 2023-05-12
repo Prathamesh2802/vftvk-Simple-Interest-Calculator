@@ -27,7 +27,7 @@ body {
 .maindiv {
     margin: 150px auto;
     display: flex;
-  
+    padding: 0 150px;
     border-radius: 25px;
     flex-direction: column;
     border-radius: 25px;
